@@ -24,9 +24,8 @@ jobs:
         run: date
   job4: 
     needs: [job1, job2, job3]
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      run: date
+        run: date
      
