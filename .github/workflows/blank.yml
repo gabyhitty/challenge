@@ -11,21 +11,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        run: date
+      - run: date
   job2:
     runs-on: windows-latest
     steps: 
       - uses: actions/checkout@v3
-        run: date
+      - run: date
   job3:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
-        run: date
+      - run: date
   job4: 
     needs: [job1, job2, job3]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        run: date
+      - run: date
      
